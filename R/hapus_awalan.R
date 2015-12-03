@@ -1,14 +1,15 @@
-
+## Delete prefixes
 
 HapusAwalan <- function(kata) {
 
-  kataasal <- kata
-
-  kata <- HapusAwalanDiKeSe(kataasal)
+  kata <- HapusAwalanDiKeSe(kata)
   return(kata)
 
 }
 
+
+## Delete prefix di-, ke-, se
+## eg. dimakan, kekuatan, sehati
 
 HapusAwalanDiKeSe <- function(kata) {
 
