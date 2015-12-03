@@ -1,3 +1,5 @@
+## Remove inflection suffixes
+## -lah, -kah, -ku, -mu, -nya
 
 HapusAkhiran <- function(kata) {
 
@@ -17,6 +19,9 @@ HapusAkhiran <- function(kata) {
 }
 
 
+## Remove possesive pronouns 
+## -ku, -mu, -nya
+
 HapusAkhiranKepunyaan <- function(kata) {
 
   if ( grepl("[A-Za-z]+(nya|[km]u)$", kata) ) {
@@ -27,6 +32,9 @@ HapusAkhiranKepunyaan <- function(kata) {
 
 }
 
+
+## Remove derivation suffixes
+## -i, -an, -kan
 
 HapusAkhiranIAnKan <- function(kata) {
 
