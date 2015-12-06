@@ -14,7 +14,6 @@ katadasaR <- function(kata, kamus=NULL) {
     if ( is_katadasar(kata, kamus) ) {
 
       return(kata)
-
     }
 
     kata <- HapusAkhiranIAnKan(kata)
@@ -22,15 +21,12 @@ katadasaR <- function(kata, kamus=NULL) {
     if ( is_katadasar(kata, kamus) ) {
 
       return(kata)
-
     }
 
     kata <- HapusAwalan(kata)
 
     return(kata)
-
   }
-
 }
 
 katadasar <- katadasaR
