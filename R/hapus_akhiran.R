@@ -15,11 +15,10 @@ HapusAkhiran <- function(kata) {
   }
 
   return(kata1)
-
 }
 
 
-## Remove possesive pronouns 
+## Remove possesive pronouns
 ## -ku, -mu, -nya
 
 HapusAkhiranKepunyaan <- function(kata) {
@@ -29,7 +28,6 @@ HapusAkhiranKepunyaan <- function(kata) {
   }
 
   return(kata)
-
 }
 
 
@@ -44,18 +42,15 @@ HapusAkhiranIAnKan <- function(kata) {
     if ( is_katadasar(kata1) ) {
       kata <- kata1
     }
-
   }
 
   if ( grepl("(i|[^k]an)$", kata) ) {
-    kata2 <- sub("(i|[^k]an)$", "", kata)
+    kata2 <- sub("(i|an)$", "", kata)
 
     if ( is_katadasar(kata2) ) {
       kata <- kata2
     }
-
   }
 
   return(kata)
-
 }
