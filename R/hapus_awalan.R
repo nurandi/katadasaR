@@ -2,33 +2,38 @@
 
 HapusAwalan <- function(kata) {
 
-  kata <- HapusAwalanDiKeSe(kata)
-  return(kata)
+  HapusAwalanDiKeSe(kata)
+  HapusAwalanBeTeMePe(kata)
 
 }
 
 
-## Remove prefix di-, ke-, se
-## eg. dimakan, kekuatan, sehati
+## Remove prefix be-, te-, me-, pe-
+## eg. bertanya, terjadi, menjadi, pelajar
 
-HapusAwalanDiKeSe <- function(kata) {
+HapusAwalanBeTeMePe <- function(kata) {
 
-  if ( grepl("^(di|[ks]e)", kata) ) {
-    kata1 <- sub("^(di|[ks]e)", "", kata)
+  if ( grepl("^[tmbp]e", kata) ) {
 
-    if ( is_katadasar(kata1) ) {
-      kata <- kata1
+    kata1 <- HapusAwalanBe(kata)
+    if ( !is.null(kata1) ) {
+      return(kata1)
     }
 
-    kata2 <- HapusAkhiranIAnKan(kata1)
+    kata1 <- HapusAwalanTe(kata)
+    if ( !is.null(kata1) ) {
+      return(kata1)
+    }
 
-    if ( is_katadasar(kata2) ) {
-      kata <- kata2
+    kata1 <- HapusAwalanMe(kata)
+    if ( !is.null(kata1) ) {
+      return(kata1)
+    }
+
+    kata1 <- HapusAwalanPe(kata)
+    if ( !is.null(kata1) ) {
+      return(kata1)
     }
 
   }
-
-  return(kata)
-
 }
-
