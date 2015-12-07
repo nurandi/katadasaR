@@ -3,6 +3,10 @@
 
 katadasaR <- function(kata, kamus=NULL) {
 
+  if ( length(kata) != 1 ) {
+    stop("Input should be a vector of length 1.")
+  }
+
   kata0 <- kata
 
   if ( is_katadasar(kata, kamus) ) {
