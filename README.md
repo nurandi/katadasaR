@@ -1,8 +1,8 @@
 # katadasaR
-**An R package of word stemming for Bahasa Indonesia using Nazief &amp; Adriani's Algorithm**
+**An R Package of Word Stemming for Bahasa Indonesia Using Nazief &amp; Adriani's Algorithm**
 
 ### How to Use
-This package is currenly under development. Not ready to be install to R library even with `devtools::install_github()`. However, you still able to run and test all functions using `devtools::load_all()`.
+This package is currenly under development. Not ready to be installed to R library even with `devtools::install_github()`. However, you still able to run and test all functions using `devtools::load_all()`.
 
 ```
 setwd("path\\to\\folder\\katadasaR")
