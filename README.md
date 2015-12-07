@@ -2,7 +2,20 @@
 **An R package of word stemming for Bahasa Indonesia using Nazief &amp; Adriani's Algorithm**
 
 ### How to Use
-This package is currenly under development. You need `devtools` package to run. Unfortunately, `devtools::install_github()` function cannot be used :(, but you still able to use and test functions it with `devtools::load_all()`.
+This package is currenly under development. Not ready to be install to R library even with `devtools::install_github()`. However, you still able to run and test all functions using `devtools::load_all()`.
+
+```
+setwd("path\\to\\folder\\katadasaR")
+library(devtools)
+load_all()
+
+words <- c("jakarta", "seminar", "penggunaan", "menggurui", "pelajaran", "dimana")
+sapply(words, katadasaR)
+
+## output
+##    jakarta    seminar penggunaan  menggurui  pelajaran     dimana 
+##  "jakarta"  "seminar"     "guna"     "guru"     "ajar"     "mana" 
+```
 
 ### Acknowledgement
 _Ported from:_ [csharp-indonesia.com](www.csharp-indonesia.com/2014/07/algoritma-stemming-pencarian-kata-dasar.html)
