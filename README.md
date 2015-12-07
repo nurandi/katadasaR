@@ -4,7 +4,7 @@
 ### How to Use
 This package is currenly under development. Not ready to be installed to R library even with `devtools::install_github()`. However, you still able to run and test all functions using `devtools::load_all()`.
 
-```
+```r
 setwd("path\\to\\folder\\katadasaR")
 library(devtools)
 load_all()
