@@ -14,6 +14,8 @@ install_github("nurandi/katadasaR")
 `katadasaR` a.k.a `katadasar` function checks if a word is word stem and do stemming process if it is an affixed word. Unfortunately, the function only able to process one word per call. See `?katadasaR` for detail.
 
 ```r
+library(katadasaR)
+
 katadasar("makanan")
 
 ## output:
