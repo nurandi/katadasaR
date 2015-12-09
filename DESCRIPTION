@@ -6,8 +6,7 @@ Date: 2015-12-02
 Author: Nur Andi Setiabudi <nurandi.mail@gmail.com>
 Maintainer: Nur Andi Setiabudi <nurandi.mail@gmail.com>
 Description: This package provides function for word stemming Bahasa Indonesia
-	using Nazief & Andriani Algoritm. This is ported from C# code that has been
-	written by csharp-indonesia.com
-	(csharp-indonesia.com/2014/07/algoritma-stemming-pencarian-kata-dasar.html)
+	using Nazief & Andriani Algoritm. This is ported from C# code provided by
+	csharp-indonesia.com.
 License: MIT
 LazyData: TRUE
