@@ -19,5 +19,5 @@ head(kamus_katadasar)
 }
 \keyword{kata dasar, word stemming}
 \seealso{
-\code{\link{katadasaR}}, \code{\link{katadasaR-package}}
+\code{\link{katadasaR}}, \code{\link{katadasar}}
 }
