@@ -1,4 +1,5 @@
 #' @export
+#' katadasar katadasaR
 #'
 #' @title
 #' Word stemming for Bahasa Indonesia
