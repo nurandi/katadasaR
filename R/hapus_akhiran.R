@@ -37,18 +37,26 @@ HapusAkhiranKepunyaan <- function(kata) {
 HapusAkhiranIAnKan <- function(kata) {
 
   if ( grepl("(kan)$", kata) ) {
-    kata1 <- sub("(kan)$", "", kata)
+    kata1 <- sub("(an)$", "", kata)
 
     if ( is_katadasar(kata1) ) {
       kata <- kata1
     }
   }
 
-  if ( grepl("(i|[^k]an)$", kata) ) {
-    kata2 <- sub("(i|an)$", "", kata)
+  if ( grepl("(kan)$", kata) ) {
+    kata2 <- sub("(kan)$", "", kata)
 
     if ( is_katadasar(kata2) ) {
       kata <- kata2
+    }
+  }
+
+  if ( grepl("(i|[^k]an)$", kata) ) {
+    kata3 <- sub("(i|an)$", "", kata)
+
+    if ( is_katadasar(kata3) ) {
+      kata <- kata3
     }
   }
 
