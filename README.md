@@ -33,5 +33,9 @@ sapply(words, katadasaR)
 _Ported from:_ [csharp-indonesia.com](http://www.csharp-indonesia.com/2014/07/algoritma-stemming-pencarian-kata-dasar.html)
 
 
+### Related Article
+[katadasaR : Stemming Bahasa Indonesia dengan R - nurandi.net](https://nurandi.net/r/katadasar-stemming-bahasa-indonesia-dengan-r/)
+
+
 
 
