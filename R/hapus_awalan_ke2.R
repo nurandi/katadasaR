@@ -65,7 +65,7 @@ HapusAwalanKe2 <- function(kata) {
   }
 
   # ketidak-
-  if ( grepl("^ketidak[^b]", kata) ) {
+  if ( grepl("^ketidak", kata) ) {
 
     kata1 <- sub("^ketidak", "", kata)
     if ( is_katadasar(kata1) ) {
@@ -78,23 +78,40 @@ HapusAwalanKe2 <- function(kata) {
     }
   }
 
-  # ketidak-
-  if ( grepl("^ketidakb", kata) ) {
 
-    kata1 <- sub("^ketidak", "", kata)
-    if ( is_katadasar(kata1) ) {
-      return(kata1)
-    }
-
-    kata2 <- HapusAwalanBe(kata1)
-    if ( is_katadasar(kata2) ) {
-      return(kata2)
-    }
-
-    kata3 <- HapusAkhiranIAnKan(kata2)
-    if ( is_katadasar(kata3) ) {
-      return(kata3)
-    }
-  }
+  # # ketidak-
+  # if ( grepl("^ketidak[^b]", kata) ) {
+  #
+  #   kata1 <- sub("^ketidak", "", kata)
+  #   if ( is_katadasar(kata1) ) {
+  #     return(kata1)
+  #   }
+  #
+  #   kata2 <- HapusAkhiranIAnKan(kata1)
+  #   if ( is_katadasar(kata2) ) {
+  #     return(kata2)
+  #   }
+  # }
+  #
+  # # ketidak-
+  # if ( grepl("^ketidakb", kata) ) {
+  #
+  #   kata1 <- sub("^ketidak", "", kata)
+  #   if ( is_katadasar(kata1) ) {
+  #     return(kata1)
+  #   }
+  #
+  #   if ( grepl("^be", kata1) ) {
+  #     kata2 <- HapusAwalanBe(kata1)
+  #     if ( is_katadasar(kata2) ) {
+  #       return(kata2)
+  #     }
+  #   }
+  #
+  #   kata3 <- HapusAkhiranIAnKan(kata2)
+  #   if ( is_katadasar(kata3) ) {
+  #     return(kata3)
+  #   }
+  # }
 
 }
