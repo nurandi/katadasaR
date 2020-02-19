@@ -1,3 +1,5 @@
+**Note**: This package might not work on the latest R version
+
 # katadasaR
 Provides a function to retrieve word stem (a.k.a. word stemming) for Bahasa Indonesia using Nazief and Andriani's algorithm. It consists of set of features to remove prefixes, suffixes or both, but still unable for infixes removal. This package is ported from C sharp code provided by [csharp-indonesia.com](http://www.csharp-indonesia.com/2014/07/algoritma-stemming-pencarian-kata-dasar.html). Credit goes to original author(s).
 
