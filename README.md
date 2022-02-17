@@ -23,12 +23,11 @@ katadasar("makanan")
 ## output:
 ## [1] "makan"
 
-words <- c("jakarta", "seminar", "penggunaan", "menggurui", "pelajaran", "dimana")
+words <- c("jakarta", "seminar", "penggunaan", "menggurui", "pelajaran", "dimana", "menyampaikan")
 sapply(words, katadasaR)
 
-## output
-##    jakarta    seminar penggunaan  menggurui  pelajaran     dimana 
-##  "jakarta"  "seminar"     "guna"     "guru"     "ajar"     "mana" 
+##    jakarta    seminar penggunaan  menggurui  pelajaran     dimana   menyampaikan 
+##  "jakarta"  "seminar"     "guna"     "guru"     "ajar"     "mana"       "sampai"
 ```
 
 ### Acknowledgement
