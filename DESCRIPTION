@@ -3,6 +3,7 @@ Type: Package
 Title: Function for word stemming Bahasa Indonesia
 Version: 0.1
 Date: 2015-12-02
+Update: 2022-02-17
 Author: Nur Andi Setiabudi <nurandi.mail@gmail.com>
 Maintainer: Nur Andi Setiabudi <nurandi.mail@gmail.com>
 Description: This package provides function for word stemming Bahasa Indonesia
